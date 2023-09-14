@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .ele{
+            background: #6a6a57;
+            padding: 20px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .totop{
+            background-color: red;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+            display: none;
+        }
+        .totop.show{
+            display: block;
+        }
+    </style>
+    <script src="js/main.js"></script>
+    <script>
+
+    
+    </script>
+
+</head>
+<body>
+
+     <h1  id="hello" >Hello World</h1>
+     <button onclick="sayHello()">click here </button>
+
+     <a id="mylink" href="https://www.google.com"> my link</a>
+
+     <div class="totop" id="totop">
+         up
+     </div>
+
+    
+
+    <!-- <script src="js/main.js"></script> -->
+    <script>
+
+        // alert("test alert");
+        var x = 10 ;
+        var y = 20;
+        console.log(x + y);
+        // document.write("hello from document")
+        
+        var username = "mohammed"; 
+        var age = 10;
+        // var hobbies = ["football" , "swiming"];
+        var city = "gaza";
+        var age2 = "10"
+
+       
+        
+        // alert(typeof hobbies);
+        console.log("My name is : " + username + " " + "my age is " + age);
+
+        // if(city == "gaaza"){
+        //     console.log("Done")
+
+        // }else if(age > 20){
+        //     console.log("done 2 ")
+        // }  
+        // else{
+        //     console.log("faild")
+        // }
+        // if(age === age2 ){
+        //     console.log("done age ")
+
+        // }else{
+        //     console.log("faild age ")
+        // }
+
+
+        // var userage = prompt("Enter your age");
+
+        // console.log(userage)
+        // var season = "mmmmmmm"
+
+        // switch(season){
+        //     case "spring" : console.log(" spring season"); break;
+        //     case "summer" : console.log(" summer season"); break;
+        //     case "winnter" : console.log(" winnter season"); break;
+        //     case "autom" : console.log(" autom season"); break;
+        //     default : console.log("unvaild value");
+
+        // }
+
+        ////////////////////
+       
+        // function sayHello(){
+        //     var x2 = 10;
+        //     // alert("hello from function" + x2);
+        //     var y2 = 20;
+        //     var result = x2 + y2
+
+        //     return result
+        // }
+
+        // console.log(sayHello())
+
+        // sayHello();
+
+        // var age = prompt("please enter your age ");
+        // function clacmyage(age){
+
+        //     return "your age in sconde is : " + age * 365 * 24 *60
+
+
+        // }
+
+        // console.log(clacmyage(age));
+
+        // for(var i = 0 ; i<10 ; i++){
+        //     console.log(i)
+
+        // }
+
+
+
+        // var hobbies = ["football" , "swiming","tennies"];
+        // hobbies[0] = "new value";
+        // console.log(hobbies[0]);
+        // hobbies.push("bascketball");
+        // hobbies.pop();
+        // hobbies.unshift("bascketball");
+        // hobbies.shift();
+        // console.log(hobbies);
+
+
+
+        ////////
+
+        // var hell = document.getElementById("hello").innerHTML = "Mohammed";
+        
+        // var hell = document.getElementsByClassName("hello").innerHTML = "Mohammed";
+        // var hell = document.querySelector(".hello").innerHTML = "Mohammed";
+
+        
+        
+
+        // console.log(hell);
+
+        var mylink = document.querySelector("#mylink").setAttribute("href" , "mmmmmmmmm");
+        
+        console.log(mylink);
+
+        document.getElementById("hello").style.backgroundColor = "red";
+        // document.getElementById("hello").style.color = "#fff";
+        // document.getElementById("hello").style.cssText = "color : #fff ; background : red; padding : 10px"
+
+
+        var mydiv = document.createElement("div");
+        var myp = document.createElement("p");
+        var mytext = document.createTextNode("this is a text from js ");
+
+        myp.append(mytext);
+        mydiv.append(myp);
+
+        mydiv.classList.add("ele");
+        // mydiv.classList.remove("ele");
+
+        document.body.prepend(mydiv)
+        var element  =  document.getElementById("hello")
+        element.classList.toggle("mmmm");
+
+        element.onclick = function(){
+            element.innerHTML = "mohammed seyam"
+
+        }
+
+        window.onload = function(){
+            // alert("from window")
+        };
+         
+        var totop = document.getElementById("totop");
+        
+        window.onscroll = function(){
+            if(this.scrollY > 1000){
+                
+                totop.classList.add("show");
+            } else{
+                totop.classList.remove("show");
+            }
+        }
+
+        totop.onclick = function(){
+            window.scrollTo({
+                top : 0,
+                behavior : "smooth"
+                
+            })
+        }
+
+
+
+
+
+
+
+
+        console.log(mydiv)
+
+
+
+
+
+
+
+
+
+        
+
+
+
+        
+
+
+
+
+    </script>
+</body>
+</html>

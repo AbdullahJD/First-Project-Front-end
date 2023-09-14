@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        td ,th{
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Table Example</h1>
+
+    <table border="1">
+        <caption>catpion test</caption>
+        <tr>
+            <th>columu 1</th>
+            <th>columu 2</th>
+            <th>columu 3</th>
+
+        </tr>
+        <tr>
+            <td rowspan="2">columu 1</td>
+            <td>columu 2</td>
+            <td>columu 3</td>
+
+        </tr>
+        <tr>
+            
+            <td>columu 2</td>
+            <td>columu 3</td>
+
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">columu 1</td>
+            
+
+        </tr>
+
+    </table>
+    
+    <hr>
+    <h2>audio and video</h2>
+    <!-- <audio src="test.mp3" controls autoplay ></audio> -->
+    <audio controls>
+        <source src="test.mp3" type="audio/mpeg" >
+        <source src="test.ogg" type="audio/ogg" >
+    </audio>
+
+    <video src="movie.mp4" controls width="500px" height="200px"></video>
+    <br><br>
+
+    <!-- <iframe src="" frameborder="0"></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/j45uQHZzitA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.loader {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 10px solid red;
+  border-top-color: #002147;
+  box-sizing: border-box;
+  background: transparent;
+  animation: loading 1s linear infinite;
+  
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="loader" id="load"></div>
+
+
+
+    <script>
+        var load = document.getElementById("load");
+        window.onload = function(){
+            load.style.display = "none"
+            
+
+
+        }
+    </script>
+</body>
+</html>
